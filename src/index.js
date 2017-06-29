@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import Docs from './docs/App';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom'
 import './docs/css/index.css';
-import Index from "./index/Index";
+import IndexPage from "./index/IndexPage";
+import './common/css/layout.css';
 
 const IndexRoute = ({ match }) => {
-    return <Index/>
+    return <IndexPage/>
 };
 
 const DocsRoute = ({ match }) => {

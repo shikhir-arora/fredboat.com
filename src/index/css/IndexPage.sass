@@ -1,0 +1,72 @@
+@import "../../common/css/_vars"
+
+.index-top
+    .logo-wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 200px
+        width: 200px
+        background-color: $fredboatColor
+        border-radius: 50%
+
+    .logo
+        height: 150px
+        width: 150px
+        border-radius: 50%
+        user-select: none
+
+.feature-section
+    display: flex
+    justify-content: center
+    flex-wrap: nowrap
+    align-items: center
+    width: calc(100vw - #{$pageMargin} * 2)
+    height: 300px
+    padding: 0 $pageMargin 0 $pageMargin
+
+.feature-section:nth-of-type(odd)
+    background-image: url("../../../public/bg/black_lozenge.png")
+
+.feature-section:nth-of-type(even)
+    background-image: url("../../../public/bg/navy_blue.png")
+
+.feature-section > *:first-child
+    margin-right: 150px
+
+.FeatureDescription
+    width: 380px
+
+    .feature-title
+        margin-bottom: 8px
+        font-weight: bolder
+    .overline
+        display: block
+        height: 3px
+        width: 100%
+        background-color: white
+    p
+        display: block
+        font-size: 20px
+        color: white
+        font-family: Lato, sans-serif
+        margin-top: 12px
+        text-align: justify
+
+.feature-sources
+    color: white
+    display: inline-flex
+    justify-content: space-between
+    align-items: center
+    width: 120px
+
+    div
+        display: flex
+        justify-content: center
+        flex-direction: column
+
+    .fa
+        display: flex
+        justify-content: center
+        margin: 10px
+        font-size: 5em

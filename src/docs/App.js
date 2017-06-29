@@ -8,7 +8,7 @@ import Header from "../common/Header";
 class Docs extends Component {
     render() {
         return (
-            <div>
+            <div className="Docs">
                 <Header/>
 
                 <div className="page-body">
