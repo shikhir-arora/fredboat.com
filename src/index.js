@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import Docs from './docs/App';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom'
 import './docs/css/index.css';
+import Index from "./index/Index";
+
+const IndexRoute = ({ match }) => {
+    return <Index/>
+};
 
 const DocsRoute = ({ match }) => {
     if(match.params.page === "index") {
@@ -28,6 +33,7 @@ const Analytics = ({location}) => {
 ReactDOM.render(
     <BrowserRouter id="UA-25845175-7">
         <div>
+            <Route exact path="/" render={IndexRoute}/>
             <Route exact path="/docs/" component={DocsRoute}/>
             <Route path="/docs/:page" component={DocsRoute}/>
             <Route path="/" render={Analytics}/>
