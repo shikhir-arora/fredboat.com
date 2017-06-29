@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Docs from './docs/App';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom'
-import './css/index.css';
+import './docs/css/index.css';
 
-const AppRoute = ({ match }) => {
+const DocsRoute = ({ match }) => {
     if(match.params.page === "index") {
         return <Redirect to="/"/>
     }
 
     const page = match.params.page === undefined ? "index" : match.params.page;
 
-    return <App page={page}/>
+    return <Docs page={page}/>
 };
 
 /**
@@ -28,8 +28,8 @@ const Analytics = ({location}) => {
 ReactDOM.render(
     <BrowserRouter id="UA-25845175-7">
         <div>
-            <Route exact path="/" component={AppRoute}/>
-            <Route path="/:page" component={AppRoute}/>
+            <Route exact path="/" component={DocsRoute}/>
+            <Route path="/:page" component={DocsRoute}/>
             <Route path="/" render={Analytics}/>
         </div>
     </BrowserRouter>,

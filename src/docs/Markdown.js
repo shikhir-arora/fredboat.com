@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Loading from 'react-loading-animation';
 import marked from 'marked';
 import hljs from 'highlight.js';
-import logo from "../public/logo.svg";
+import logo from "../../public/logo/logo.svg";
 import "./css/Markdown.css";
 import "highlight.js/styles/monokai-sublime.css";
 

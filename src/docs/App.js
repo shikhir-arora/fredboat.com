@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import "./css/App.css";
-import logo from "../public/logo.svg";
+import logo from "../../public/logo/logo.svg";
 import Markdown from "./Markdown";
 import Toc from "./Toc";
 import BottomBar from "./BottomBar";
 
-import discord from "../public/icon/discord.svg";
-import patreon from "../public/icon/patreon.png";
-import github from "../public/icon/github.png";
-import twitter from "../public/icon/twitter.svg";
+import discord from "../../public/icon/discord.svg";
+import patreon from "../../public/icon/patreon.png";
+import github from "../../public/icon/github.png";
+import twitter from "../../public/icon/twitter.svg";
 
-class App extends Component {
+class Docs extends Component {
     render() {
         return (
             <div>
@@ -49,4 +49,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Docs;
