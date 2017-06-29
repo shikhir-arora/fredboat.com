@@ -5,7 +5,6 @@ import {BrowserRouter, Route, Redirect} from 'react-router-dom'
 import './docs/css/index.css';
 
 const DocsRoute = ({ match }) => {
-    console.log(match)
     if(match.params.page === "index") {
         return <Redirect to="/docs/"/>
     }
