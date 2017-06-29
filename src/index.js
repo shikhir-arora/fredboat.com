@@ -5,8 +5,9 @@ import {BrowserRouter, Route, Redirect} from 'react-router-dom'
 import './docs/css/index.css';
 
 const DocsRoute = ({ match }) => {
+    console.log(match)
     if(match.params.page === "index") {
-        return <Redirect to="/"/>
+        return <Redirect to="/docs/"/>
     }
 
     const page = match.params.page === undefined ? "index" : match.params.page;
@@ -28,8 +29,8 @@ const Analytics = ({location}) => {
 ReactDOM.render(
     <BrowserRouter id="UA-25845175-7">
         <div>
-            <Route exact path="/" component={DocsRoute}/>
-            <Route path="/:page" component={DocsRoute}/>
+            <Route exact path="/docs/" component={DocsRoute}/>
+            <Route path="/docs/:page" component={DocsRoute}/>
             <Route path="/" render={Analytics}/>
         </div>
     </BrowserRouter>,

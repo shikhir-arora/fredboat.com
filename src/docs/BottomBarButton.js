@@ -6,7 +6,7 @@ class BottomBarButton extends Component {
     render() {
         return (
             <div className={this.props.activePage === this.props.page ? "BottomBarButton active" : "BottomBarButton"}>
-                <Link to={"/" + this.props.page}>
+                <Link to={"/docs/" + this.props.page}>
                     <FontAwesome name={this.props.icon} size="2x"/>
                     <div>
                         {this.props.name}
