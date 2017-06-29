@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Docs from './docs/App';
+import Docs from './docs/Docs';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom'
 import './docs/css/index.css';
 import IndexPage from "./index/IndexPage";
