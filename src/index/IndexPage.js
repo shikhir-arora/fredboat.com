@@ -6,6 +6,7 @@ import FeatureDescription from "./FeatureDescription";
 import FontAwesome from 'react-fontawesome';
 
 class Index extends Component {
+    //noinspection JSMethodCanBeStatic
     render() {
 
         return (
@@ -16,12 +17,14 @@ class Index extends Component {
                         <div className="logo-wrapper">
                             <img className="logo" src={logo} alt="Logo" draggable="false"/>
                         </div>
-                        <FeatureDescription title="Meet FredBoat♪♪" text="FredBoat is a free Discord music bot that delivers high-quality music to your Discord server.
-                        The music bot is made to be easy plug in to your Discord server with no configuration."/>
+                        <FeatureDescription title="Meet FredBoat♪♪"
+                                            text="FredBoat is a free Discord music bot that delivers high-quality music to your Discord server.
+                        You can easily add the music bot to your Discord server with zero configuration."/>
                     </div>
 
-                    <div className="feature-section index-second">
-                        <FeatureDescription title="Wide range of integrations" text="FredBoat can play music from YouTube, Soundcloud, Bandcamp, direct links, Twitch. Yes, it also supports playlists and livestreams!"/>
+                    <div className="feature-section">
+                        <FeatureDescription title="Wide range of integrations"
+                                            text="FredBoat can play music from YouTube, Soundcloud, Bandcamp, direct links, Twitch. Yes, it also supports playlists and livestreams!"/>
                         <div className="feature-sources">
                             <div>
                                 <FontAwesome name="youtube-play"/>
@@ -32,6 +35,42 @@ class Index extends Component {
                                 <FontAwesome name="twitch"/>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="feature-section">
+                        <div className="feature-search">
+                            <div style={{display: "flex", justifyContent: "center"}}>
+                                <FontAwesome name="search"/>
+                            </div>
+                            <div>
+                                <FontAwesome name="youtube-play"/>
+                                <FontAwesome name="soundcloud"/>
+                            </div>
+                        </div>
+                        <FeatureDescription title="YouTube and Soundcloud search"
+                                            text="Instead of linking directly to a track, you can also choose to simply just type in the name of your song and let FredBoat find it for you."/>
+                    </div>
+
+                    <div className="feature-section">
+                        <FeatureDescription title="Shuffle and repeat"
+                                            text="FredBoat has full support for shuffling your playlist. You can even choose to put just one or the entire queue on repeat."/>
+                        <div>
+                            <FontAwesome name="random" style={{fontSize: "7em", marginRight: "25px"}}/>
+                            <FontAwesome name="repeat" style={{fontSize: "7em"}}/>
+                        </div>
+                    </div>
+
+                    <div className="feature-section">
+                        <FontAwesome name="lock" style={{fontSize: "10em"}}/>
+                        <FeatureDescription title="Easy and secure permission system"
+                                            text="FredBoat was initially created to be easy to use in small servers, but if you are the admin of a larger server you can keep the trolls at bay by restricting who can modify the queue."/>
+                    </div>
+
+                    <div className="feature-section">
+
+                        <FeatureDescription title="Completely open source"
+                                            text="Since development began, FredBoat has always been open source! This means that FredBoat is shaped by the community, and advanced users can even host their own FredBoat."/>
+                        <FontAwesome name="github" style={{fontSize: "10em"}}/>
                     </div>
                 </div>
             </div>
