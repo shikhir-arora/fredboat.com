@@ -12,6 +12,7 @@ class FeatureDescription extends Component {
                 <p>
                     {this.props.text}
                 </p>
+                {this.props.under}
             </div>
         )
     }
