@@ -15,6 +15,7 @@ class Index extends Component {
             <div>
                 <Header/>
                 <div className="index-page-body">
+                    <MobileHeader/>
                     <div className="feature-section index-top">
                         <div className="feature-deco">
                             <div className="logo-wrapper">
