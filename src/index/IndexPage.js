@@ -5,6 +5,7 @@ import logo from "../../public/logo/logo.svg";
 import FeatureDescription from "./FeatureDescription";
 import FontAwesome from 'react-fontawesome';
 import FaButton from "../common/FaButton";
+import MobileHeader from "../common/MobileHeader";
 
 class Index extends Component {
     //noinspection JSMethodCanBeStatic

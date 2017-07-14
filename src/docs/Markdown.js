@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Loading from 'react-loading-animation';
 import marked from 'marked';
 import hljs from 'highlight.js';
-import logo from "../../public/logo/logo.svg";
 import "./css/Markdown.css";
 import "highlight.js/styles/monokai-sublime.css";
+import MobileHeader from "../common/MobileHeader";
 
 class Markdown extends Component {
 
@@ -92,9 +92,7 @@ class Markdown extends Component {
 
         return (
             <div className="Markdown">
-                <div className="mobile-header">
-                    <img className="logo" src={logo} alt="Logo" draggable="false"/>
-                </div>
+                <MobileHeader/>
                 {inner}
             </div>
         )
