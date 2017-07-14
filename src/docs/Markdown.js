@@ -5,6 +5,7 @@ import hljs from 'highlight.js';
 import "./css/Markdown.css";
 import "highlight.js/styles/monokai-sublime.css";
 import MobileHeader from "../common/MobileHeader";
+import Footer from "../common/Footer";
 
 class Markdown extends Component {
 
@@ -86,7 +87,11 @@ class Markdown extends Component {
             this.processMarkdown(this);
         } else {
             inner = (
-                <div className="content" dangerouslySetInnerHTML={{__html: this.state.loadedMarkdown}}/>
+                <div>
+                    <div className="content" dangerouslySetInnerHTML={{__html: this.state.loadedMarkdown}}/>
+                    <Footer/>
+                </div>
+
             );
         }
 

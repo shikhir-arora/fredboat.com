@@ -1,0 +1,36 @@
+@import "vars"
+@import "../../docs/css/Toc.sass"
+
+$colorActive: white
+
+.Footer
+    display: flex
+    justify-content: center
+    height: 200px
+    background-image: url("../../../public/bg/asfalt.png")
+
+.footer-column
+    width: 200px
+    padding-top: 32px
+    font-family: Lato, sans-serif
+
+    p
+        margin: 0 0 10px 0
+        color: #828282
+        font-size: 22px
+    a
+        display: block
+        color: #aeaeae
+        text-decoration: none
+        font-size: 16px
+        margin-top: 8px
+        transition: color 0.2s
+    a:hover
+        color: $colorActive
+
+    .current
+        color: $colorActive
+        font-weight: bolder
+
+.Markdown > div > .Footer
+    filter: brightness(1.5)

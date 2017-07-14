@@ -4,6 +4,7 @@ import Markdown from "./Markdown";
 import Toc from "./Toc";
 import BottomBar from "./BottomBar";
 import Header from "../common/Header";
+import Footer from "../common/Footer";
 
 class Docs extends Component {
     render() {

@@ -6,6 +6,7 @@ import FeatureDescription from "./FeatureDescription";
 import FontAwesome from 'react-fontawesome';
 import FaButton from "../common/FaButton";
 import MobileHeader from "../common/MobileHeader";
+import Footer from "../common/Footer";
 
 class Index extends Component {
     //noinspection JSMethodCanBeStatic
@@ -125,6 +126,7 @@ class Index extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }
