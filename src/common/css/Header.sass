@@ -5,6 +5,7 @@
     width: calc(100% - #{$pageMargin}*2)
     background: $fredboatColor
     padding: 0 $pageMargin 0 $pageMargin
+
     @media screen and (max-width: $breakLarge)
         padding: 0 10px 0 10px
         width: calc(100% - 20px)
@@ -12,6 +13,10 @@
     @media screen and (max-width: $breakSmall)
         // A mobile header will be used on small screens to replace this
         display: none
+
+    .logo-link
+        color: black
+        text-decoration: none
 
 .header .logo
     height: 48px
@@ -27,7 +32,6 @@
     font-size: 32px
     line-height: 64px
     user-select: none
-    cursor: default
     @media screen and (max-width: $breakSmall)
         display: none
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./css/Header.css";
 import logo from "../../public/logo/logo.svg";
+import {Link} from 'react-router-dom';
 
 import discord from "../../public/icon/discord.svg";
 import patreon from "../../public/icon/patreon.png";
@@ -12,8 +13,10 @@ class Header extends Component {
 
         return (
             <div className="header">
-                <img className="logo" src={logo} alt="Logo" draggable="false"/>
-                <div className="logo-text">FredBoat</div>
+                <Link to="/" className="logo-link">
+                    <img className="logo" src={logo} alt="Logo" draggable="false"/>
+                    <div className="logo-text">FredBoat</div>
+                </Link>
                 <div className="header-right">
                     <a className="header-button" href="https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot">Add to Discord</a>
                     <div className="icons">
