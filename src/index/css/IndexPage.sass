@@ -18,23 +18,40 @@
 
 .feature-section
     display: flex
-    justify-content: space-around
-    padding: 0 28% 0 28%
+    justify-content: space-between
     flex-wrap: nowrap
     align-items: center
     color: white
-    //width: calc(100vw - #{$pageMargin} * 2)
-    height: 300px
-    //padding: 0 $pageMargin 0 $pageMargin
+    min-height: 300px
+    padding: 0 27% 0 27%
+
+    @media screen and (max-width: 1500px)
+        padding: 0 22% 0 22%
+
+    @media screen and (max-width: 1400px)
+        padding: 0 18% 0 18%
+
+    @media screen and (max-width: 1300px)
+        padding: 0 14% 0 14%
+
+    @media screen and (max-width: 1200px)
+        padding: 0 10% 0 10%
+
+    @media screen and (max-width: 1100px)
+        padding: 0 6% 0 6%
+
+    @media screen and (max-width: $breakLarge)
+        padding: 0 20px 0 20px
+
+    @media screen and (max-width: 650px)
+        justify-content: center
+
 
 .feature-section:nth-of-type(odd)
     background-image: url("../../../public/bg/black_lozenge.png")
 
 .feature-section:nth-of-type(even)
     background-image: url("../../../public/bg/navy_blue.png")
-
-.feature-section > *:first-child
-    //margin-right: 150px
 
 .FeatureDescription
     width: 380px
@@ -55,15 +72,20 @@
         margin-top: 12px
         text-align: justify
 
+.feature-deco
+    display: flex
+    justify-content: center
+    width: 50%
+
+    @media screen and (max-width: 650px)
+        display: none
+
 .feature-sources
     color: white
     display: inline-flex
     justify-content: space-between
     align-items: center
-    width: 120px
-
-    position: relative
-    right: 60px
+    width: 220px
 
     div
         display: flex

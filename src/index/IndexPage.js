@@ -15,8 +15,10 @@ class Index extends Component {
                 <Header/>
                 <div className="page-body">
                     <div className="feature-section index-top">
-                        <div className="logo-wrapper">
-                            <img className="logo" src={logo} alt="Logo" draggable="false"/>
+                        <div className="feature-deco">
+                            <div className="logo-wrapper">
+                                <img className="logo" src={logo} alt="Logo" draggable="false"/>
+                            </div>
                         </div>
                         <FeatureDescription title="Meet FredBoat♪♪"
                                             text="FredBoat is a free Discord music bot that delivers high-quality music to your Discord server.
@@ -33,26 +35,30 @@ class Index extends Component {
                     <div className="feature-section">
                         <FeatureDescription title="Wide range of integrations"
                                             text="FredBoat can play music from YouTube, Soundcloud, Bandcamp, direct links, Twitch. Yes, it also supports playlists and livestreams!"/>
-                        <div className="feature-sources">
-                            <div>
-                                <FontAwesome name="youtube-play"/>
-                                <FontAwesome name="soundcloud"/>
-                            </div>
-                            <div>
-                                <FontAwesome name="bandcamp"/>
-                                <FontAwesome name="twitch"/>
+                        <div className="feature-deco">
+                            <div className="feature-sources">
+                                <div>
+                                    <FontAwesome name="youtube-play"/>
+                                    <FontAwesome name="soundcloud"/>
+                                </div>
+                                <div>
+                                    <FontAwesome name="bandcamp"/>
+                                    <FontAwesome name="twitch"/>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="feature-section">
-                        <div className="feature-search">
-                            <div style={{display: "flex", justifyContent: "center"}}>
-                                <FontAwesome name="search"/>
-                            </div>
-                            <div>
-                                <FontAwesome name="youtube-play"/>
-                                <FontAwesome name="soundcloud"/>
+                        <div className="feature-deco">
+                            <div className="feature-search">
+                                <div style={{display: "flex", justifyContent: "center"}}>
+                                    <FontAwesome name="search"/>
+                                </div>
+                                <div>
+                                    <FontAwesome name="youtube-play"/>
+                                    <FontAwesome name="soundcloud"/>
+                                </div>
                             </div>
                         </div>
                         <FeatureDescription title="YouTube and Soundcloud search"
@@ -62,14 +68,16 @@ class Index extends Component {
                     <div className="feature-section">
                         <FeatureDescription title="Shuffle and repeat"
                                             text="FredBoat has full support for shuffling your playlist. You can even choose to put just one or the entire queue on repeat."/>
-                        <div>
+                        <div className="feature-deco">
                             <FontAwesome name="random" style={{fontSize: "7em", marginRight: "25px"}}/>
                             <FontAwesome name="repeat" style={{fontSize: "7em"}}/>
                         </div>
                     </div>
 
                     <div className="feature-section">
-                        <FontAwesome name="lock" style={{fontSize: "10em"}}/>
+                        <div className="feature-deco">
+                            <FontAwesome name="lock" style={{fontSize: "10em"}}/>
+                        </div>
                         <FeatureDescription title="Easy and secure permission system"
                                             text="FredBoat was initially created to be easy to use in small servers, but if you are the admin of a larger server you can keep the trolls at bay by restricting who can modify the queue."
                                             under={
@@ -90,7 +98,9 @@ class Index extends Component {
                                                         <FaButton to="https://github.com/Frederikam/FredBoat" text="View the source code" icon="github" color="#3399ff"/>
                                                     </div>
                                                 )}/>
-                        <FontAwesome name="github" style={{fontSize: "10em"}}/>
+                        <div className="feature-deco">
+                            <FontAwesome name="github" style={{fontSize: "10em"}}/>
+                        </div>
                     </div>
                 </div>
             </div>
