@@ -22,34 +22,16 @@
 
 .feature-section
     display: flex
+    justify-content: center
+    color: white
+    min-height: 300px
+
+.feature-section-inner
+    display: flex
     justify-content: space-between
     flex-wrap: nowrap
     align-items: center
-    color: white
-    min-height: 300px
-    padding: 0 27% 0 27%
-
-    @media screen and (max-width: 1500px)
-        padding: 0 22% 0 22%
-
-    @media screen and (max-width: 1400px)
-        padding: 0 18% 0 18%
-
-    @media screen and (max-width: 1300px)
-        padding: 0 14% 0 14%
-
-    @media screen and (max-width: 1200px)
-        padding: 0 10% 0 10%
-
-    @media screen and (max-width: 1100px)
-        padding: 0 6% 0 6%
-
-    @media screen and (max-width: $breakLarge)
-        padding: 0 20px 0 20px
-
-    @media screen and (max-width: 650px)
-        justify-content: center
-
+    max-width: 800px
 
 .feature-section:nth-of-type(odd)
     background-image: url("../../../public/bg/black_lozenge.png")
@@ -81,7 +63,7 @@
     justify-content: center
     width: 50%
 
-    @media screen and (max-width: 650px)
+    @media screen and (max-width: $breakSmall)
         display: none
 
 .feature-sources
