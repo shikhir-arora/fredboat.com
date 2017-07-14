@@ -5,6 +5,10 @@ $blurple: #7289DA
 .Docs > .page-body
     display: flex
 
+    @media screen and (max-width: $breakSmall)
+        //Make space for the BottomBar
+        height: calc(100vh - 96px)
+
 .Markdown
     height: calc(100vh - #{$headerHeight})
     width: calc(100vw - #{$tocWidth})

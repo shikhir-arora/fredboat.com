@@ -13,7 +13,7 @@ class Index extends Component {
         return (
             <div>
                 <Header/>
-                <div className="page-body">
+                <div className="index-page-body">
                     <div className="feature-section index-top">
                         <div className="feature-deco">
                             <div className="logo-wrapper">

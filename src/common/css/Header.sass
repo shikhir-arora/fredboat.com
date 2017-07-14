@@ -110,3 +110,19 @@
 
 .header-button:first-child
     border-left: none
+
+.mobile-header
+    @media screen and (min-width: $breakSmall)
+        display: none
+
+    height: $headerHeight
+    background-color: $fredboatColor
+
+    .logo
+        // Not using flexbox here, because the scrollbar can push the center
+        position: relative
+        left: calc(50vw - 24px)
+
+.mobile-header img
+    height: 48px
+    margin: 8px
