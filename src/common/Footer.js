@@ -39,16 +39,16 @@ class Footer extends Component {
 
                 <div className="footer-column">
                     <p>
-                        Social
+                        Development
                     </p>
-                    <DynamicLink to="https://discordapp.com/invite/cgPFW4q">
-                        Discord server
+                    <DynamicLink to="https://github.com/Frederikam/FredBoat">
+                        Main repository
                     </DynamicLink>
-                    <DynamicLink to="https://twitter.com/DiscordFredBoat">
-                        Twitter (FredBoat)
+                    <DynamicLink to="https://github.com/FredBoat/fredboat.com">
+                        Web repository
                     </DynamicLink>
-                    <DynamicLink to="https://twitter.com/Frederikam00">
-                        Twitter (Fre_d)
+                    <DynamicLink to="https://crowdin.com/project/fredboat">
+                        Translations
                     </DynamicLink>
                 </div>
             </div>

@@ -8,9 +8,12 @@ $colorActive: white
     justify-content: center
     height: 200px
     background-image: url("../../../public/bg/asfalt.png")
+    @media screen and (max-width: $breakSmall)
+        display: none
 
 .footer-column
-    width: 200px
+    width: 150px
+    margin: 0 25px 0 25px
     padding-top: 32px
     font-family: Lato, sans-serif
 
@@ -34,3 +37,6 @@ $colorActive: white
 
 .Markdown > div > .Footer
     filter: brightness(1.5)
+
+    @media screen and (max-width: $breakLarge)
+        display: none
