@@ -4,6 +4,10 @@
     overflow-y: auto
     overflow-x: hidden
 
+    // Make sure the footer goes all the way down
+    min-height: calc(100vh - #{$headerHeight} - #{$footerHeight})
+    background-image: url("../../../public/bg/black_lozenge.png")
+
 .index-top
     .logo-wrapper
         display: flex
