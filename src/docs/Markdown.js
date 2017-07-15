@@ -87,7 +87,8 @@ class Markdown extends Component {
             this.processMarkdown(this);
         } else {
             inner = (
-                <div>
+                <div className="inner">
+                    <MobileHeader/>
                     <div className="content" dangerouslySetInnerHTML={{__html: this.state.loadedMarkdown}}/>
                     <Footer/>
                 </div>
@@ -97,7 +98,6 @@ class Markdown extends Component {
 
         return (
             <div className="Markdown">
-                <MobileHeader/>
                 {inner}
             </div>
         )

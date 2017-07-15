@@ -60,6 +60,8 @@
 .content
     max-width: 50em
     padding: 8px 16px 32px 32px
+    @media screen and (min-width: $breakLarge)
+        min-height: calc(100vh - #{$headerHeight} - #{$footerHeight} - 40px)
     @media screen and (max-width: $breakLarge)
         padding: 8px 8px 8px 8px
 

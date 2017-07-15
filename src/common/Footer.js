@@ -20,6 +20,9 @@ class Footer extends Component {
                     <DynamicLink to="https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot">
                         Add FredBoat
                     </DynamicLink>
+                    <DynamicLink to="/docs/donate">
+                        Donate
+                    </DynamicLink>
                 </div>
 
                 <div className="footer-column">
