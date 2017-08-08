@@ -5,9 +5,9 @@ class FeatureDescription extends Component {
 
         return (
             <div className="FeatureDescription">
-                <p className="feature-title">
+                <h2 className="feature-title">
                     {this.props.title}
-                </p>
+                </h2>
                 <div className="overline"/>
                 <p>
                     {this.props.text}

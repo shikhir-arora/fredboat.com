@@ -4,6 +4,12 @@ import "./css/TocHeader.css";
 
 class TocHeader extends Component {
     render() {
+        if (this.props.activePage === this.props.page) {
+            document.title = this.props.name;
+
+            if (this.props.name === "Quickstart") document.title = "Commands";
+        }
+
         return (
             <div className="TocHeader">
                 <Link to={"/docs/" + this.props.page}>
