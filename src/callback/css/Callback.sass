@@ -1,0 +1,56 @@
+@import "../../common/css/_vars"
+
+$breakHeight: 800px
+
+.callback-page
+    min-height: calc(100vh - #{$headerHeight} - #{$footerHeight})
+    background-image: url("../../../public/bg/black_lozenge.png")
+    display: flex
+    flex-direction: column
+    //justify-content: center
+    align-items: center
+    color: white
+    @media screen and (max-width: $breakSmall)
+        min-height: calc(100vh)
+    .mobile-header
+        width: 100%
+
+.callback-title
+    margin-top: 15vh
+    font-size: 2em
+    font-family: 'Pragmati Narrow', sans-serif
+    text-align: center
+    @media screen and (max-height: $breakHeight)
+        margin-top: 5vh
+    .fa
+        margin-right: 8px
+
+.callback-lower
+    margin-top: 16px
+    font-family: Lato, sans-serif
+    max-width: 600px
+    padding: 16px
+    .buttons
+        display: flex
+        justify-content: center
+        flex-flow: row wrap
+        // Make the buttons flex in a column instead
+        @media screen and (max-width: 500px)
+            flex-direction: column
+            align-items: center
+            *
+                width: 200px
+        a
+            white-space: nowrap
+    @media screen and (max-height: $breakHeight)
+        margin-top: 0
+
+
+#callback-ad
+    width: 300px
+    margin: 20px 0 32px calc(50% - 300px / 2)
+    display: flex
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: 320px)
+        display: none

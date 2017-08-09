@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Redirect} from 'react-router-dom'
 import './docs/css/index.css';
 import IndexPage from "./index/IndexPage";
 import './common/css/layout.css';
+import Callback from "./callback/Callback";
 
 const IndexRoute = ({ match }) => {
     return <IndexPage/>
@@ -18,6 +19,10 @@ const DocsRoute = ({ match }) => {
     const page = match.params.page === undefined ? "index" : match.params.page;
 
     return <Docs page={page}/>
+};
+
+const CallbackRoute = ({ match }) => {
+    return <Callback music={match.path.endsWith("/music")}/>
 };
 
 /**
@@ -36,6 +41,8 @@ ReactDOM.render(
         <div>
             <Route exact path="/" render={IndexRoute}/>
             <Route exact path="/docs/" component={DocsRoute}/>
+            <Route exact path="/callback/music" component={CallbackRoute}/>
+            <Route exact path="/callback/nonmusic" component={CallbackRoute}/>
             <Route path="/docs/:page" component={DocsRoute}/>
             <Route path="/" render={Analytics}/>
         </div>
