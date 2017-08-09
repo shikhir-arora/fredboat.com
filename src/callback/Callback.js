@@ -14,6 +14,7 @@ class Callback extends Component {
         let title = music ? "FredBoatMusic was successfully added" : "FredBoat was successfully added";
         let desc = music ? "If you haven't already, be sure to check out some of the commands you can use by reading the documentation."
             : "However! You just added the non-music version of FredBoat. If you want music, click the purple button below.";
+        let lowerDesc = music ? "We hope you enjoy FredBoat♪♪!" : "We hope you enjoy FredBoat!";
         let docsLink = music ? "/docs" : "/docs/non_music";
         let addBtnText = music ? "Add to another server" : "Add music bot";
 
@@ -28,7 +29,7 @@ class Callback extends Component {
                     </div>
                     <div className="callback-lower">
                         <p>{desc}</p>
-                        <p>We hope you enjoy FredBoat♪♪!</p>
+                        <p>{lowerDesc}</p>
                         <div className="buttons">
                             <FaButton to={docsLink} icon="book" text="Commands" color="#1CBFE2"/>
                             <FaButton to="https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot&callback_uri=https%3A%2F%2Ffredboat.com%2Fcallback%2Fmusic"
