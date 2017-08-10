@@ -1,8 +1,8 @@
 # Non-music Commands
-[(Requires the original bot)](https://discordapp.com/oauth2/authorize?&client_id=168686772216135681&scope=bot).
+[(Requires the original bot)](https://goo.gl/zWY6d3).
 
 ## Moderation
-With these commands you can mention the user's name, nickname, id or discrim.
+With these commands you can mention the user's name, nickname, id or discriminator.
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|

@@ -18,7 +18,7 @@ class Header extends Component {
                     <div className="logo-text">FredBoat</div>
                 </Link>
                 <div className="header-right">
-                    <a className="header-button" href="https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot">Add to Discord</a>
+                    <a className="header-button" href="https://goo.gl/cFs5M9">Add to Discord</a>
                     <div className="icons">
                         <a className="discord" href="https://discord.gg/cgPFW4q">
                             <img src={discord} alt="Discord"/>

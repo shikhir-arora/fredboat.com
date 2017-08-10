@@ -17,7 +17,7 @@ class Footer extends Component {
                     <DynamicLink to="/docs">
                         Documentation
                     </DynamicLink>
-                    <DynamicLink to="https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot">
+                    <DynamicLink to="https://goo.gl/cFs5M9">
                         Add FredBoat
                     </DynamicLink>
                     <DynamicLink to="/docs/donate">

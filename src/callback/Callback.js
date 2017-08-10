@@ -40,7 +40,7 @@ class Callback extends Component {
                         <p>{lowerDesc}</p>
                         <div className="buttons">
                             <FaButton to={docsLink} icon="book" text="Commands" color="#1CBFE2"/>
-                            <FaButton to="https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot&callback_uri=https%3A%2F%2Ffredboat.com%2Fcallback%2Fmusic"
+                            <FaButton to="https://goo.gl/cFs5M9"
                                       icon="sign-in" text={addBtnText} color="#7289DA"/>
                             <FaButton to="/docs/donate" icon="money" text="Donate" color="rgb(249, 104, 84)"/>
                         </div>

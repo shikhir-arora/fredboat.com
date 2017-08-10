@@ -31,7 +31,7 @@ class Index extends Component {
                                                     (
                                                         <div>
                                                             <FaButton
-                                                                to="https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot"
+                                                                to="https://goo.gl/cFs5M9"
                                                                 text="Add to Discord" icon="sign-in"
                                                                 color="rgb(114, 137, 218)"/>
                                                             <FaButton to="/docs" text="Read the docs" icon="book"
