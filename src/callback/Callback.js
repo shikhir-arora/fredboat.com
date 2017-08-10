@@ -18,13 +18,21 @@ class Callback extends Component {
         let docsLink = music ? "/docs" : "/docs/non_music";
         let addBtnText = music ? "Add to another server" : "Add music bot";
 
+        let error = window.location.search.substr(1).includes("error");
+        if(error) {
+            title = "Looks like Discord returned an error";
+            desc = "This usually happens when you hit \"cancel\" in the authorize dialog."
+            lowerDesc = null;
+            addBtnText = "Add music bot";
+        }
+
         return (
             <div className="Callback">
                 <Header/>
                 <div className="callback-page">
                     <MobileHeader/>
                     <div className="callback-title">
-                        <FontAwesome name="check"/>
+                        <FontAwesome name={error ? "times" : "check"}/>
                         <span>{title}</span>
                     </div>
                     <div className="callback-lower">
