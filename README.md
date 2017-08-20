@@ -1,2 +1,2 @@
-# docs.fredboat.com
-FredBoat documentation site 2.0
+# fredboat.com
+FredBoat documentation site 3.0
