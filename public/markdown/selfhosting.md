@@ -3,19 +3,38 @@ This is a tutorial for users who would like to host their own bot running Fredbo
 
 #### This tutorial is for advanced users. If you can't figure out how to run this, please use the public FredBoat♪♪
 
-## Intallation
+## Basic Installation
 
 ### Requirements
 
 1. [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-2. git and maven in your PATH
-
-3. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
-
-4. Linux \(Windows works too, but this tutorial is targetted at Linux\)
+2. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 
 ### Instructions
+
+Download `FredBoat.jar` from [this link](https://ci.fredboat.com/repository/downloadAll/FredBoat_Build/lastSuccessful?branch=refs/heads/master&guest=1), then copy it to a folder of your choosing.
+
+Now [click here](https://fredboat.com/docs/selfhosting#setup) to set up the config and credentials
+
+## Installation from Source
+
+### Requirements
+
+1. [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+2. [Apache Maven](https://maven.apache.org/install.html)
+
+3. [Git](https://www.atlassian.com/git/tutorials/install-git)
+
+4. [JDK and Maven added to your PATH](https://www.tutorialspoint.com/maven/maven_environment_setup.htm)
+
+5. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+
+### Instructions
+
+Open Terminal or Command Prompt and `cd` to the directory where you wish to download FredBoat to.
+
 Clone the `master` branch of FredBoat recursively:
 
 ```sh
@@ -29,13 +48,11 @@ cd FredBoat
 mvn package shade:shade
 ```
 
+## Setup
+
 To run the bot you should set up a directory that looks like this:
 
-```
-├──FredBoat-1.0.jar
-├──credentials.yaml
-└──config.yaml
-```
+![Directory](https://fred.moe/CsD.png)
 
 The compiled bot can be found in `FredBoat/FredBoat/target`. A sample `config.yaml` and an example `credentials.yaml` can be found in https://github.com/Frederikam/FredBoat/tree/master/FredBoat
 
@@ -66,7 +83,7 @@ token: # Add your discord bot token below to the beta and patron slots, between 
   beta: "YourTokenHere"
   patron: "YourTokenHere"
 
-  production: 
+  production:
   music:
 
 # Used by the ;;split and ;;np commands. Must be hooked up to the Youtube Data API.
