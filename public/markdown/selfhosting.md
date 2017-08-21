@@ -13,7 +13,7 @@ This is a tutorial for users who would like to host their own bot running Fredbo
 
 ### Instructions
 
-Download `FredBoat.jar` from [this link](https://ci.fredboat.com/repository/downloadAll/FredBoat_Build/lastSuccessful?branch=refs/heads/master&guest=1), then copy it to a folder of your choosing.
+Download `FredBoat.jar` from [this link](https://ci.fredboat.com/guestAuth/repository/downloadAll/FredBoat_Build/lastSuccessful?branch=refs/heads/master), then copy it to a folder of your choosing.
 
 Now [click here](https://fredboat.com/docs/selfhosting#setup) to set up the config and credentials
 
