@@ -7,17 +7,26 @@ This is a tutorial for users who would like to host their own bot running Fredbo
 
 ### Requirements
 
-1. [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+1. [Java 8 JRE](https://www.java.com/en/)
 
 2. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 
-### Instructions
+3. A Google API key if you want ;;nowplaying and search to function
 
-Download `FredBoat.jar` from [this link](https://ci.fredboat.com/guestAuth/repository/downloadAll/FredBoat_Build/lastSuccessful?branch=refs/heads/master), then copy it to a folder of your choosing.
+4. Preferably an x86_64/AMD64 CPU. Strange things may happen if you try running FredBoat on an ARM CPU like on a Raspberry Pi. If you have no idea what this means, you're probably doing it right.
+
+### Download
+* Download latest [stable build](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=%3Cdefault%3E&tab=artifacts&guest=1)
+
+* Download the latest ["I-like-living-on-the-edge build"](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fdevelopment&tab=artifacts&guest=1) (unstable) 
+
+* Download the [source code](https://github.com/Frederikam/FredBoat/)
 
 Now [click here](https://fredboat.com/docs/selfhosting#setup) to set up the config and credentials
 
-## Installation from Source
+## Compile from Source
+
+__Not recommended unless you know what you are doing__
 
 ### Requirements
 
@@ -30,6 +39,11 @@ Now [click here](https://fredboat.com/docs/selfhosting#setup) to set up the conf
 4. [JDK and Maven added to your PATH](https://www.tutorialspoint.com/maven/maven_environment_setup.htm)
 
 5. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+
+6. A Google API key if you want ;;nowplaying and search to function
+
+7. Preferably an x86_64/AMD64 CPU. Strange things may happen if you try running FredBoat on an ARM CPU like on a Raspberry Pi. If you have no idea what this means, you're probably doing it right.
+
 
 ### Instructions
 
@@ -48,7 +62,7 @@ cd FredBoat
 mvn package shade:shade
 ```
 
-## Setup
+# Setup
 
 To run the bot you should set up a directory that looks like this:
 
