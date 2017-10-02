@@ -81,36 +81,45 @@ Example credentials.yaml file:
 ```yaml
 ---
 
-### *** WARNING ***
-### ALMOST EVERYTHING REQUESTED IN THIS FILE IS CONFIDENTIAL CREDENTIALS
+################################################################
+###                    *** WARNING ***
+################################################################
+###
+### ALMOST EVERYTHING REQUESTED IN THIS FILE ARE CONFIDENTIAL CREDENTIALS
 ### IF YOU POST THIS FILE ONLINE (such as on GitHub) YOUR BOT COULD BE COMPROMISED
+###
+###
+### Do not use tab characters in this file, use plain spaces.
+### More information on correctly formatting yaml files: http://www.yaml.org/start.html
 
-# For the ;;mal command
-# Create an account on https://myanimelist.net/ and enter its login below
-malUser:
-malPassword:
+
+
+################################################################
+###                 Essential credentials
+################################################################
+
 
 token: # Add your discord bot token below to the beta and patron slots, between the quotation marks
   # Find the token of your bot on https://discordapp.com/developers/applications/me
-  # Optionally fill the other three tokens below in
-
-  beta: "YourTokenHere"
-  patron: "YourTokenHere"
-
-  production:
-  music:
+  beta:    "PutYourDiscordBotTokenHere"
+  patron:  "PutYourDiscordBotTokenHere"
 
 # Used by the ;;split and ;;np commands. Must be hooked up to the Youtube Data API.
 # Add your google API key in the brackets below between the quotation marks
 # How to get the key: https://developers.google.com/youtube/registering_an_application
 
-#googleServerKeys: [YourYoutubeAPIKey]
-googleServerKeys: ["YourYoutubeAPIKey"]
+googleServerKeys: ["PutYourGoogleAPIKeyHere"]
 
 
-# From https://cleverbot.io/
-cbUser:
-cbKey:
+
+################################################################
+###                     Optional APIs
+################################################################
+
+# For the ;;mal command
+# Create an account on https://myanimelist.net/ and enter its login below
+malUser:
+malPassword:
 
 
 # Used to access imgur galleries for some RandomImageCommands
