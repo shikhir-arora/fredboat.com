@@ -17,9 +17,9 @@ This is a tutorial for users who would like to host their own bot running Fredbo
 
 ### Download
 Pick one of these:
-* Download latest [stable build](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=%3Cdefault%3E&tab=artifacts&guest=1)
+* Download latest [stable build](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fstable&tab=artifacts&guest=1)
 
-* Download the latest ["I-like-living-on-the-edge build"](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fdevelopment&tab=artifacts&guest=1) (unstable) 
+* Download the latest ["I-like-living-on-the-edge build"](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fdev&tab=artifacts&guest=1) (unstable) 
 
 * Download the [source code](https://github.com/Frederikam/FredBoat/)
 
