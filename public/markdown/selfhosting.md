@@ -171,7 +171,7 @@ If you want to run stable builds, switch to the stable branch:
 git checkout stable
 ```
 
-You can change back anytime to the unstable/development branch like this, just remember to compile again after switching:
+You can change back anytime to the development branch like this, just remember to compile again after switching:
 ```sh
 git checkout dev
 ```
@@ -196,6 +196,7 @@ The compiled jar file can be found in `FredBoat/FredBoat/build/libs` and is call
 
 # CI server
 
+There are two builds available:
 
 Latest [Stable Build](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fstable&tab=artifacts&guest=1)  
 
