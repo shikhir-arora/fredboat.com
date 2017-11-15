@@ -1,4 +1,7 @@
 # Running FredBoat as a systemd service
+
+**Note: This is not needed when running FredBoat with docker.**
+
 Your linux distro needs to be using systemd, for example Ubuntu 15.04 and later; tested on 16.04.
 You will need the file `fredboat.service`, which you can find at https://github.com/Frederikam/FredBoat/tree/master/FredBoat
 
