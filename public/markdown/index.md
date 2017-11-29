@@ -1,18 +1,18 @@
 # Welcome to FredBoat Docs
-FredBoat is a free Discord music bot that delivers high-quality music to your Discord server. The music bot is made to be easy plug in to your Discord server with no configuration. 
+FredBoat is a free Discord music bot that delivers high-quality music to your Discord server. The music bot is made to easily plug in to your Discord server with no configuration. 
 
 ## Setting up the bot
-FredBoat is made to be super simple to use! Getting FredBoat running on your server is simple. You can invite the bot by authenticating it with your account using [this](https://goo.gl/cFs5M9) link. Bear in mind that you must have `Manage Server` permissions to be able to do this.
+FredBoat is made to be super simple to use! Getting FredBoat running on your server is easy. You can invite the bot by authenticating it with your account using [this](https://goo.gl/cFs5M9) link. Bear in mind that you must have `Manage Server` permissions to be able to do this.
 
 # Music Commands
 [(Requires the music bot)](https://goo.gl/cFs5M9).
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;play ***url***           | Plays music from the given URLs. See supported sources below.       | ;;p https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
-| ;;list                     | Displays a list of the current songs in the playlist.                 | ;;l                                      |
-| ;;nowplaying               | Displays the currently playing song.                                  | ;;np                                |
-| ;;skip                     | Skips the current song. Please use in moderation.                     | ;;s                                      |  
+| ;;play ***url***           | Plays music from the given URLs. See supported sources below.         | ;;p https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
+| ;;list                     | Displays a list of the current songs in the playlist.                 | ;;l                                         |
+| ;;nowplaying               | Displays the currently playing song.                                  | ;;np                                        |
+| ;;skip                     | Removes the current song from the queue. Please use in moderation.    | ;;s                                         |
 | ;;voteskip                 | Vote to skip the current song. Must have 50% vote or more.            | ;;v                                          |
 | ;;stop                     | Stops the player and **clears** the playlist. Reserved for moderators.| ;;stop                                      |
 | ;;pause                    | Pauses the player.                                                    | ;;pause                                     |
@@ -50,7 +50,7 @@ You can then choose your song with the `;;select <number>` command.
 
 **Supported sites:**
 
-* YouTube (streams hopefully coming soon)
+* YouTube 
 
 * SoundCloud
 
