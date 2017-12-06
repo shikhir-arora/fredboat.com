@@ -30,6 +30,28 @@ If you want to get the bot to unpause when someone joins the voice chat, you can
 ;;config auto_resume true
 ```
 
+## The ;;prefix command
+This command allows changing and viewing the prefix. Running `;;prefix` without any args should show you something like this(output may vary based on language and prefix):
+
+```
+The prefix for this guild is ;;
+You can show the prefix anytime again by mentioning me.
+```
+
+If you want to set a prefix, you may do so by running:
+
+```
+;;prefix <prefix>
+```
+
+If you wish for FredBoat to not necessitate a prefix for executing commands, you may do so by running:
+
+```
+;;prefix no_prefix
+```
+
+If you cannot remember or do not know the prefix for FredBoat in a server, just mentioning FredBoat will show you the prefix. Additionally you can mention FredBoat and follow that with a command to execute that command.
+
 ## Enabling/disabling automatic deletion of ;;play requests
 If FredBoat has permission to 'Manage Messages' in the channel settings, it will automatically delete any valid ;;play requests.
 If you prefer to keep the messages, you can just disable this bot's 'Manage Messages' permission. 
