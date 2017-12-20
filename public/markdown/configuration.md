@@ -55,3 +55,7 @@ If you cannot remember or do not know the prefix for FredBoat in a server, just 
 ## Enabling/disabling automatic deletion of ;;play requests
 If FredBoat has permission to 'Manage Messages' in the channel settings, it will automatically delete any valid ;;play requests.
 If you prefer to keep the messages, you can just disable this bot's 'Manage Messages' permission. 
+
+## Limiting access to text and voice channels
+To restrict FredBoat from receiving commands from a certain text channel, simply revoke the bot's permission to "Send Messages" in that channel. Fredboat will only accept commands from a channel it can write to.
+Likewise, if you do not want FredBoat to join certain voice channels, take away its permission to "Connect."
