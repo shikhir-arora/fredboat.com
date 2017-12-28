@@ -1,5 +1,4 @@
 # Non-music Commands
-[(Requires the original bot)](https://goo.gl/zWY6d3).
 
 ## Moderation
 With these commands you can mention the user's name, nickname, id or discriminator.

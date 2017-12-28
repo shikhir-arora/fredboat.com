@@ -1,11 +1,11 @@
 # Welcome to FredBoat Docs
 FredBoat is a free Discord music bot that delivers high-quality music to your Discord server. The music bot is made to easily plug in to your Discord server with no configuration. 
 
+
 ## Setting up the bot
 FredBoat is made to be super simple to use! Getting FredBoat running on your server is easy. You can invite the bot by authenticating it with your account using [this](https://goo.gl/cFs5M9) link. Bear in mind that you must have `Manage Server` permissions to be able to do this.
 
 # Music Commands
-[(Requires the music bot)](https://goo.gl/cFs5M9).
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
