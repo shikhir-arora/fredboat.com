@@ -96,7 +96,7 @@ _FredBoat is written in Java, so it runs pretty much anywhere where you can inst
 
 1. Java 8 **JRE**: [Oracle](https://www.java.com/en/download/) or [OpenJDK](http://openjdk.java.net/install/index.html)
 
-2. [A PostgreSQL 10 Database](https://wiki.postgresql.org/wiki/Detailed_installation_guides). You will need to add the JDBC url of your PostgreSQL database to the credentials file.
+2. [A PostgreSQL 10 Database](https://wiki.postgresql.org/wiki/Detailed_installation_guides). See the JDBC url section in the credentials file for more accurate information. FredBoat requires the Hstore extension to be present in the databases it connects to.
 
 3. A FredBoat.jar. Either [download it from our CI server](#ci-server) or [build it yourself](#build-the-fredboat-jar-from-source).
 
