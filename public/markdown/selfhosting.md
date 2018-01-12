@@ -122,7 +122,7 @@ java -jar -Xmx128m FredBoat.jar
 Please note: Double clicking the jar won't work!
 
 
-[Follow this link](/systemdservice) to find a tutorial on running FredBoat as a `systemd` service so that it starts and restarts automatically.
+[Follow this link](/docs/systemdservice) to find a tutorial on running FredBoat as a `systemd` service so that it starts and restarts automatically.
 
 
 Congratulations! Your FredBoat should be running now. If you haven't invited your bot to your guild yet, [visit this tutorial](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token) to find out how to do it.
@@ -222,4 +222,11 @@ wget https://ci.fredboat.com/guestAuth/repository/download/FredBoat_Build/.lastS
 
 wget https://ci.fredboat.com/guestAuth/repository/download/FredBoat_Build/.lastSuccessful/credentials.yaml.example?branch=refs/heads/dev -O credentials.yaml
 
+```
+
+
+# Bot Administration
+As a selfhoster, you and your configured bot admins have access to additional administrative commands, which you can find through
+```
+;;commands admin
 ```
