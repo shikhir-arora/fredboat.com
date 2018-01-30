@@ -133,14 +133,11 @@ Congratulations! Your FredBoat should be running now. If you haven't invited you
 
 A sample `config.yaml` and an example `credentials.yaml` can be found on [our CI server](#ci-server).
 
-In order to run FredBoat, you must first populate it with API credentials for Discord in the `credentials.yaml` file.
+You need to read and edit both files according to your preferences. Occasionally new values are added and old ones replaced or discontinued. Check back regularly for updates of those files.
 
-Music bot only: Fill in the Discord bot token for patron and a Youtube API key. Set *patron* to *true* in the `config.yaml` file and *development* to *false*. Fill in the Spotify tokens under the `Optional APIs` to be able to load Spotify playlists.
+In order to run FredBoat, you must populate the `credentials.yaml` file with a bot token for Discord and a Youtube API key. More stuff, for example Spotify, can be enabled by filling out the corresponding credentials under `Optional APIs` in the credentials file.
 
-Full bot: Fill in the Discord bot token for beta, a Youtube API key and every other Optional API key too. Set *development* to *true* in the `config.yaml` file and *patron* to *false*.
-
-Unless you are using docker-compose, make sure to add the JDBC url of your PostgreSQL database to the credentials file.
-
+Unless you are using docker-compose, make sure to add the JDBC url of your PostgreSQL database to the credentials file too.
 
 
 # Build the FredBoat jar from source
