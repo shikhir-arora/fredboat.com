@@ -1,6 +1,6 @@
 $navColor: #2E3136
 $borderColor: #4c5059
-$playerHeight: 250px
+$playerHeight: 150px
 $navWidth: 200px
 $eventsWidth: 300px
 
@@ -8,16 +8,8 @@ $eventsWidth: 300px
   display: flex
   flex-direction: row
   width: 100%
-  height: calc(100vh)
+  height: calc(100vh - 64px)
   background-color: #36393E
-
-.NavigationArea
-  width: $navWidth
-  height: 100%
-
-.EventsArea
-  width: $eventsWidth
-  height: 100%
 
 .player-center-column
   width: calc(100% - #{$navWidth} - #{$eventsWidth})
@@ -25,12 +17,18 @@ $eventsWidth: 300px
   border-left: 1px solid #4c5059
   border-right: 1px solid #4c5059
 
+.NavigationArea
+  width: $navWidth
+  height: 100%
+  background-color: #2E3136
+
+.EventsArea
+  width: $eventsWidth
+  height: 100%
+
 .QueueArea
-  height: calc(100% - #{$playerHeight})
+  height: calc(100% - #{$playerHeight} - 1px)
   border-bottom: 1px solid #4c5059
 
 .PlayerArea
   height: $playerHeight
-
-.NavigationArea
-  background-color: #2E3136
