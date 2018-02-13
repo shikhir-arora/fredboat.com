@@ -11,24 +11,34 @@ $eventsWidth: 300px
   height: calc(100vh - 64px)
   background-color: #36393E
 
-.player-center-column
-  width: calc(100% - #{$navWidth} - #{$eventsWidth})
-  height: 100%
+  .player-root-side-column
+    flex-grow: 1
+
+.player-center-container
+  flex-grow: 2
   border-left: 1px solid #4c5059
   border-right: 1px solid #4c5059
 
+.player-info-container
+  display: flex
+
+  height: calc(100% - #{$playerHeight} - 1px)
+
+.player-info-container > div
+  flex-grow: 1
+
 .NavigationArea
-  width: $navWidth
+  width: 100%
   height: 100%
   background-color: #2E3136
 
 .EventsArea
-  width: $eventsWidth
   height: 100%
+  border-left: 1px solid #4c5059
 
 .QueueArea
-  height: calc(100% - #{$playerHeight} - 1px)
-  border-bottom: 1px solid #4c5059
+  height: 100%
 
 .PlayerArea
   height: $playerHeight
+  border-top: 1px solid #4c5059

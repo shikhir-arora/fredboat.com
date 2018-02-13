@@ -12,12 +12,19 @@ class Player extends Component {
             <div className="Player">
                 <Header/>
                 <div className="player-root-container">
-                    <NavigationArea/>
-                    <div className="player-center-column">
-                        <QueueArea/>
+                    <div className="player-root-side-column">
+                        <NavigationArea/>
+                    </div>
+                    <div className="player-center-container">
+                        <div className="player-info-container">
+                            <QueueArea/>
+                            <EventsArea/>
+                        </div>
                         <PlayerArea/>
                     </div>
-                    <EventsArea/>
+                    <div className="player-root-side-column">
+                        {/* Spacer */}
+                    </div>
                 </div>
             </div>
         )
