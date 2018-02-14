@@ -1,4 +1,26 @@
+$padding: 6px
+
 .QueueItem
-  width: 100%
+  width: calc(100% - #{$padding}*2)
   height: 50px
   border-bottom: 2px solid #4c5059
+  padding: $padding
+  display: flex
+  justify-content: space-between
+
+  .queue-item-body
+    flex-grow: 1
+    height: 100%
+    display: inline-flex
+
+    // TODO: Adapt for other sources
+    .queue-item-image
+      display: inline-block
+      width: 91px
+      height: 50px
+      background-size: 91px
+
+    .queue-item-inner
+      padding-left: 8px
+      color: white
+      font-family: Lato, sans-serif

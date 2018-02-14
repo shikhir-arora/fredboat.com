@@ -7,7 +7,7 @@ const mock = {
     title: "Never gonna give you up",
     source: "youtube",
     url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Nullable
-    image: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Nullable
+    image: "https://i.ytimg.com/vi/dQw4w9WgXcQ/mqdefault.jpg", // Nullable
     author: "RickAstleyVEVO", // Nullable
     duration: 3 * 60 + 33, // Nullable if stream
     startTime: 0 // Unix time

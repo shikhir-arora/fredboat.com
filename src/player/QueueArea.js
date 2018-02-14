@@ -7,7 +7,7 @@ const mock = {
     title: "Never gonna give you up",
     source: "youtube",
     url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Nullable
-    image: "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg", // Nullable
+    image: "https://i.ytimg.com/vi/teIYXCDnJvc/mqdefault.jpg", // Nullable
     author: "RickAstleyVEVO", // Nullable
     duration: 3 * 60 + 33, // Nullable if stream
     startTime: 0 // Unix time
@@ -24,11 +24,9 @@ class QueueArea extends Component {
 
     render() {
         const queueItems = [];
-        let i = 0;
-        for (const track in this.state.tracks) {
+        for (const i in this.state.tracks) {
             // noinspection JSUnfilteredForInLoop
-            queueItems.push(<QueueItem key={i} track={track}/>);
-            i++;
+            queueItems.push(<QueueItem key={i} track={this.state.tracks[i]}/>);
         }
 
         return (
