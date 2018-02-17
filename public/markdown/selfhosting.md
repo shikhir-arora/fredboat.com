@@ -69,6 +69,8 @@ and start everything with:
 ```sh
 docker-compose up -d
 ```
+_Please note: During the first start, the database container requires additional time to be fully set up and, depending on the specs of your machine as well as whether your latest sacrifices have appeased the Docker gods, might not be ready immediately, resulting in the FredBoat container restarting a few times or even exiting. Run the above command a (few) additional times in that case_
+
 You can see running docker containers on your machine with:
 ```sh
 docker ps
