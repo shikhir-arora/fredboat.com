@@ -6,6 +6,7 @@ import "./css/Markdown.css";
 import "highlight.js/styles/monokai-sublime.css";
 import MobileHeader from "../common/MobileHeader";
 import Footer from "../common/Footer";
+import NotFound from "../common/NotFound";
 
 class Markdown extends Component {
 
@@ -73,9 +74,9 @@ class Markdown extends Component {
 
         if(this.state.is404) {
             inner = (
-                <div className="text-404">
-                    Error 404 ~ Not found
-                </div>
+              <div>
+                  <NotFound/>
+              </div>
             );
         } else if(this.state.loadedPage !== this.props.name) {
             inner = (
