@@ -16,7 +16,12 @@ $playerHeight: 250px
   background-color: #222427
 
 .player-root__center
-  width: 800px
+  flex-grow: 1
+
+.player-root__center__inner > div
+  padding-left: calc((100% - 900px) / 2)
+  padding-right: calc((100% - 900px) / 2 + 64px) // 64px to remain symmetrical, even with the nav
 
 .PlayerArea
   height: $playerHeight
+  background-color: #2e3136
