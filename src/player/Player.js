@@ -10,17 +10,13 @@ class Player extends Component {
         return (
             <div className="Player">
                 <Header/>
-                <div className="player-root-container">
-                    <div className="player-root-side-column">
-                        <NavigationArea/>
-                    </div>
-                    <div className="player-center-container">
+                <div className="player-root">
+                    <NavigationArea/>
+                    <div className="player-root__center">
                         <PlayerArea/>
                         <QueueArea/>
                     </div>
-                    <div className="player-root-side-column">
-                        {/* Spacer */}
-                    </div>
+                    <div/> {/* Space */}
                 </div>
             </div>
         )

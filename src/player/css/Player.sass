@@ -1,34 +1,22 @@
+@import "../../common/css/_vars"
+
 $navColor: #2E3136
 $borderColor: #4c5059
-$playerHeight: 150px
-$navWidth: 200px
-$eventsWidth: 300px
+$playerHeight: 250px
 
-.player-root-container
+.player-root
   display: flex
-  flex-direction: row
-  width: 100%
-  height: calc(100vh - 64px)
-  background-color: #36393E
-
-  .player-root-side-column
-    flex-grow: 1
-
-.player-center-container
-  flex-grow: 2
-
-.player-info-container
-  display: flex
-
-  height: calc(100% - #{$playerHeight} - 1px)
-
-.player-info-container > div
-  flex-grow: 1
+  height: calc(100vh - #{$headerHeight})
+  justify-content: space-between
+  background-color: #3c4046
 
 .NavigationArea
-  width: 100%
+  width: 64px
   height: 100%
-  background-color: #2E3136
+  background-color: #222427
+
+.player-root__center
+  width: 800px
 
 .PlayerArea
   height: $playerHeight
