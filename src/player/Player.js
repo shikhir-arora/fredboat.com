@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "./css/Player.css";
 import Header from "../common/Header";
 import NavigationArea from "./NavigationArea";
-import EventsArea from "./EventsArea";
 import QueueArea from "./QueueArea";
 import PlayerArea from "./PlayerArea";
 
@@ -18,7 +17,6 @@ class Player extends Component {
                     <div className="player-center-container">
                         <div className="player-info-container">
                             <QueueArea/>
-                            <EventsArea/>
                         </div>
                         <PlayerArea/>
                     </div>
