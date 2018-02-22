@@ -3,6 +3,7 @@
 $navColor: #2E3136
 $borderColor: #4c5059
 $playerHeight: 250px
+$centerMaxWidth: 900px
 
 .player-root
   display: flex
@@ -18,10 +19,17 @@ $playerHeight: 250px
 .player-root__center
   flex-grow: 1
 
-.player-root__center__inner > div
-  padding-left: calc((100% - 900px) / 2)
-  padding-right: calc((100% - 900px) / 2 + 64px) // 64px to remain symmetrical, even with the nav
+.player-root__center > div
+  padding-left:  calc((100% - #{$centerMaxWidth}) / 2)
+  padding-right: calc((100% - #{$centerMaxWidth}) / 2)
+  @media screen and (max-width: 1000px)
+    padding: 0
 
 .PlayerArea
   height: $playerHeight
   background-color: #2e3136
+
+.QueueArea
+  height: calc(100% - #{$playerHeight})
+  display: flex
+  flex-direction: column-reverse

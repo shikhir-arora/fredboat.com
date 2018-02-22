@@ -13,10 +13,8 @@ class Player extends Component {
                 <div className="player-root">
                     <NavigationArea/>
                     <div className="player-root__center">
-                        <div className="player-root__center__inner">
-                            <QueueArea/>
-                            <PlayerArea/>
-                        </div>
+                        <QueueArea/>
+                        <PlayerArea/>
                     </div>
                 </div>
             </div>
