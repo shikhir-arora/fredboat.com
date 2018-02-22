@@ -36,7 +36,8 @@
   .player-buttons
     display: flex
     justify-content: center
-    .PlayerButton
+
+.player-buttons > .PlayerButton, .PlayPauseButton
       display: flex
       align-items: center
       justify-content: center
@@ -46,5 +47,7 @@
       width: 2em
       color: white
       background-color: none
+
+.player-buttons > .PlayPauseButton
       border: 2px white solid
       border-radius: 50%

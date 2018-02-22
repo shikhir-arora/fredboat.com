@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './css/PlayerArea.css'
 import PlayerButton from "./PlayerButton";
+import PlayPauseButton from "./PlayPauseButton"
 
 const mock = {
     id: "dQw4w9WgXcQ",
@@ -38,10 +39,11 @@ class PlayerArea extends Component {
                             <span>3:33</span>
                         </div>
                         <div className="player-buttons">
-                            <PlayerButton icon="play"/>
+                            <PlayerButton icon="random"/>
                             <PlayerButton icon="step-backward"/>
-                            <PlayerButton icon="stop"/>
+                            <PlayPauseButton/>
                             <PlayerButton icon="step-forward"/>
+                            <PlayerButton icon="repeat"/>
                         </div>
                     </div>
                 </div>
