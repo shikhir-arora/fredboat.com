@@ -15,10 +15,8 @@ class Player extends Component {
                         <NavigationArea/>
                     </div>
                     <div className="player-center-container">
-                        <div className="player-info-container">
-                            <QueueArea/>
-                        </div>
                         <PlayerArea/>
+                        <QueueArea/>
                     </div>
                     <div className="player-root-side-column">
                         {/* Spacer */}

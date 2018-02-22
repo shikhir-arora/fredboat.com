@@ -3,13 +3,13 @@ $padding: 6px
 .QueueItem
   width: calc(100% - #{$padding}*2)
   height: 50px
-  border-bottom: 2px solid #4c5059
   padding: $padding
   display: flex
   justify-content: space-between
 
   .queue-item-cross
-    color: darkred
+    color: #000
+    opacity: 0
 
   .queue-item-body
     flex-grow: 1
@@ -27,3 +27,6 @@ $padding: 6px
       padding-left: 8px
       color: white
       font-family: Lato, sans-serif
+
+.QueueItem:hover > .queue-item
+  opacity: 1
