@@ -2,31 +2,51 @@ $padding: 6px
 
 .QueueItem
   width: calc(100% - #{$padding}*2)
-  height: 16px
+  height: 24px
   padding: $padding
+  color: white
   display: flex
   justify-content: space-between
 
-  .queue-item-cross
-    color: #000
-    opacity: 0
+  span
+    margin-left: 8px
+    height: 24px
+    font-family: Lato, sans-serif
 
-  .queue-item-body
-    flex-grow: 1
-    height: 100%
-    display: inline-flex
+  span, .QueueItem__cross
+    // This is a hack. We can't use text-align when inline-block is present
+    position: relative
+    bottom: 6px
 
-    // TODO: Adapt for other sources
-    .queue-item-image
-      display: inline-block
-      width: 29px
-      height: 16px
-      background-size: 29px
+  .QueueItem__number
+    font-family: "Roboto Mono", sans-serif
+    width: 36px
+    color: #e5e5e5
+    margin-left: 0
 
-    .queue-item-inner
-      padding-left: 8px
-      color: white
-      font-family: Lato, sans-serif
+  // TODO: Adapt for other sources
+  .QueueItem__image
+    display: inline-block
+    width: 42px
+    height: 24px
+    background-size: 42px
+    bottom: 0
 
-.QueueItem:hover > .queue-item
-  opacity: 1
+  .QueueItem__cross
+    display: block
+    opacity: 0.2
+    cursor: pointer
+    margin-right: 6px
+    bottom: -4px
+
+.QueueItem:nth-child(odd)
+  background-color: #292c30
+
+.QueueItem:nth-child(even)
+  background-color: #34383d
+
+.QueueItem:hover > .QueueItem__cross
+  opacity: 0.5
+
+.QueueItem__cross:hover
+  opacity: 1 !important

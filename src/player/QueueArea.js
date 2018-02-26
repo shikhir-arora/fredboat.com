@@ -26,7 +26,7 @@ class QueueArea extends Component {
         const queueItems = [];
         for (const i in this.state.tracks) {
             // noinspection JSUnfilteredForInLoop
-            queueItems.push(<QueueItem key={i} track={this.state.tracks[i]}/>);
+            queueItems.push(<QueueItem key={i} num={Number(i)+1} track={this.state.tracks[i]}/>);
         }
 
         return (

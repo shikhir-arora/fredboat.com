@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Docs from './docs/Docs';
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom'
-import './docs/css/index.css';
 import IndexPage from "./index/IndexPage";
 import Player from "./player/Player";
 import './common/css/layout.css';
