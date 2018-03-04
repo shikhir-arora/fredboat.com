@@ -1,0 +1,11 @@
+@import "vars"
+
+.error-page-body
+  display: block
+  min-height: calc(100vh - #{$headerHeight} - #{$footerHeight})
+  overflow-y: auto
+  overflow-x: hidden
+  background-image: url("../../../public/bg/black_lozenge.png")
+
+  @media screen and (max-width: $breakSmall)
+    min-height: 100vh

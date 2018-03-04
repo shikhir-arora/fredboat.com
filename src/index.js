@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Docs from './docs/Docs';
-import {BrowserRouter, Route, Redirect} from 'react-router-dom'
+import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom'
 import './docs/css/index.css';
 import IndexPage from "./index/IndexPage";
 import './common/css/layout.css';
 import Callback from "./callback/Callback";
+import NotFoundPage from "./common/NotFoundPage"
 
 const IndexRoute = ({ match }) => {
     return <IndexPage/>
@@ -37,15 +38,18 @@ const Analytics = ({location}) => {
 };
 
 ReactDOM.render(
-    <BrowserRouter id="UA-25845175-7">
-        <div>
-            <Route exact path="/" render={IndexRoute}/>
-            <Route exact path="/docs/" component={DocsRoute}/>
-            <Route exact path="/callback/music" component={CallbackRoute}/>
-            <Route exact path="/callback/nonmusic" component={CallbackRoute}/>
-            <Route path="/docs/:page" component={DocsRoute}/>
-            <Route path="/" render={Analytics}/>
-        </div>
-    </BrowserRouter>,
+  <BrowserRouter id="UA-25845175-7">
+    <div>
+      <Switch>
+        <Route exact path="/" render={IndexRoute}/>
+        <Route exact path="/docs/" component={DocsRoute}/>
+        <Route exact path="/callback/music" component={CallbackRoute}/>
+        <Route exact path="/callback/nonmusic" component={CallbackRoute}/>
+        <Route path="/docs/:page" component={DocsRoute}/>
+        <Route component={NotFoundPage}/>
+      </Switch>
+      <Route path="/" render={Analytics}/>
+    </div>
+  </BrowserRouter>,
   document.getElementById('root')
 );
