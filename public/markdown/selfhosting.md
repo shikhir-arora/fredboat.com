@@ -1,4 +1,11 @@
 # Selfhosting FredBoat
+
+* * *
+
+**Warning**: This guide is a community effort, and has not been updated to the latest version of FredBoat by the selfhosting community. You will not be able to run the latest code with the current state of this document. You can help update / improve this guide by submitting your pull requests [here]( https://github.com/FredBoat/fredboat.com/blob/master/public/markdown/selfhosting.md).
+
+* * *
+
 This is a tutorial for users who would like to host their own FredBoat instance. Please bear in mind that this is not a requirement for using the FredBoat service as there is a [public FredBoat♪♪](https://goo.gl/cFs5M9) hosted and provided that is simple to use.
 
 **This tutorial is for advanced users. If you can't figure out how to run this, please use the [public FredBoat♪♪](https://goo.gl/cFs5M9)**
