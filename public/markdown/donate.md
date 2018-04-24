@@ -12,7 +12,7 @@ As a patron of $2 or more per month you will gain access to FredBoat Patron in o
 4. Earn the __Patron role__ in FredBoat Hangout
 
 %PATREON_BUTTON%
-Once you have become a Patron you can remotely add the bot by going to www.patron.fredboat.com!
+Once you have become a Patron you can remotely add the bot by going to [patron.fredboat.com](https://patron.fredboat.com/)!
 
 ## One-off donations
 You may also donate via PayPal if you wish, __but I am unable to provide the patron bot to PayPal donators.__
