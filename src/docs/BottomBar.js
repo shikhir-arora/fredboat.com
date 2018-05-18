@@ -15,6 +15,7 @@ class BottomBar extends Component {
                 <BottomBarButton activePage={this.props.page} icon="legal" page="terms" name="Terms of Service"/>
                 <BottomBarButton activePage={this.props.page} icon="terminal" page="selfhosting" name="Selfhosting"/>
                 <BottomBarButton activePage={this.props.page} icon="terminal" page="systemdservice" name="Selfhosting (systemd)"/>
+                <BottomBarButton activePage={this.props.page} icon="terminal" page="heroku" name="Selfhosting (Heroku)"/>
             </div>
         )
     }

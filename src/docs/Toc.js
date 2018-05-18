@@ -50,6 +50,7 @@ class Toc extends Component {
 
                     <TocHeader activePage={this.props.page} page="selfhosting" name="Selfhosting"/>
                     <TocHeader activePage={this.props.page} page="systemdservice" name="Selfhosting (systemd)"/>
+                    <TocHeader activePage={this.props.page} page="heroku" name="Selfhosting (Heroku)"/>
                 </div>
 
                 <div id="ad-sidebar"/>
