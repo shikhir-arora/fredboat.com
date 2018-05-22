@@ -64,7 +64,7 @@ class Toc extends Component {
         const script = document.createElement("script");
         script.async = true;
         script.type = "text/javascript";
-        script.src = "//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=fredboatcom";
+        script.src = "//cdn.carbonads.com/carbon.js?serve=CKYI5K7N&placement=fredboatcom";
         script.id="_carbonads_js";
         document.getElementById("ad-sidebar").appendChild(script);
 
