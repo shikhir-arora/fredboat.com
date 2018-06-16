@@ -1,1 +1,0 @@
-web: java -Dserver.port=$PORT -jar -Xmx60m Quarterdeck.jar & java -jar -Xmx128m FredBoat.jar
