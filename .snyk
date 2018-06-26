@@ -44,3 +44,6 @@ patch:
         patched: '2018-06-22T06:28:05.983Z'
     - npm > libcipm > npm-lifecycle > node-gyp > request > hawk > cryptiles > boom > hoek:
         patched: '2018-06-22T06:28:05.983Z'
+  'npm:tunnel-agent:20170305':
+    - node-sass-chokidar > node-sass > request > tunnel-agent:
+        patched: '2018-06-26T06:25:44.949Z'
