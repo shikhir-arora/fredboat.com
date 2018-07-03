@@ -47,3 +47,8 @@ patch:
   'npm:tunnel-agent:20170305':
     - node-sass-chokidar > node-sass > request > tunnel-agent:
         patched: '2018-06-26T06:25:44.949Z'
+  'npm:lodash:20180130':
+    - npm > cli-table2 > lodash:
+        patched: '2018-07-03T06:49:50.184Z'
+    - npm > npm-audit-report > cli-table2 > lodash:
+        patched: '2018-07-03T06:49:50.184Z'
