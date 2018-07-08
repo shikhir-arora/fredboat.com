@@ -38,7 +38,7 @@ class Footer extends Component {
                     <DynamicLink to="https://twitter.com/Frederikam00">
                         Twitter (Fre_d)
                     </DynamicLink>
-                    <DynamicLink to="https://mastodon.social/@fre_d">
+                    <DynamicLink to="https://niu.moe/@fred">
                         Mastodon (Fre_d)
                     </DynamicLink>
                 </div>
