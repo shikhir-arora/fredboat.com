@@ -10,7 +10,7 @@
     "highlight.js": "^9.11.0",
     "hoek": "^4.2.1",
     "marked": "^0.3.6",
-    "node-sass-chokidar": "0.0.3",
+    "node-sass-chokidar": "1.3.1",
     "normalize.css": "^7.0.0",
     "npm": "^5.7.1",
     "react": "^15.5.4",
